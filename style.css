@@ -29,8 +29,16 @@ body
 ----------------------------------*/
 .main-container
 {
-    max-width: 1140px;
+    max-width: 1170px;
     margin: 0 auto;
+}
+/*----------------------------------
+            BLUE-CONTAINER
+----------------------------------*/
+.blue-container
+{
+    border-radius: 20px;
+    background-color: #b5ddff;
 }
 /*----------------------------------
             BUTTON
@@ -64,7 +72,6 @@ img
 {
     max-width: 100%;
 }
-
 /*----------------------------------
 
             HEADER
@@ -79,7 +86,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px;
 }
 /*----------------------------------
             RIGHT-HEADER
@@ -127,19 +134,192 @@ button a
 {
     display: none;
 }
+
+/*----------------------------------
+
+            OPTIONS
+
+----------------------------------*/
+/*----------------------------------
+
+            GENERAL
+----------------------------------*/
+.options
+{
+    padding-bottom: 80px;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.upper-row
+{
+    margin-top: 35px;
+}
+.lower-row
+{
+    margin-top: 20px;
+}
+.col
+{
+    width: calc(100% / 3);
+    padding: 0 10px;
+}
+/*----------------------------------
+            I
+----------------------------------*/
+.options i:not([class$="-apple"])
+{
+    font-size: 70px;
+    color: #0084fd;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+/*----------------------------------
+            H3
+----------------------------------*/
+.options h3
+{
+    color: #0084fd;
+    text-align: center;
+    padding-top: 25px;
+}
+.left-demo h3
+{
+    color: #0084fd;
+    text-align: left;
+}
+/*----------------------------------
+            TEXT    
+----------------------------------*/
+.text
+{
+    color: #5a6e7f;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    padding: 10px;
+}
+.text-p
+{
+    color: #5a6e7f;
+    font-weight: 600;
+    line-height: 2;
+    text-align: left;
+}
+/*----------------------------------
+            
+----------------------------------*/
+
+/*----------------------------------
+
+            DEMO     
+----------------------------------*/
+.demo .blue-container
+{
+    display: flex;
+}
+.grow
+{
+    flex-grow: 1;
+}
+/*----------------------------------
+            LEFT-DEMO
+----------------------------------*/
+.left-demo
+{
+    padding: 10px 30px;
+    width: 50%;
+}
+.left-demo p
+{
+    font-size: 16px;
+    padding: 20px 0;
+}
+.demo-button
+{
+    padding: 8px 40px;
+    background-color: #0084fd;
+    color: white;
+}
+.demo-button a
+{
+    color: white;
+    font-weight: bold;
+}
+[class$="-apple"]
+{
+    color: white;
+    padding: 0 5px;
+}
+/*----------------------------------
+            RIGHT-DEMO
+----------------------------------*/
+.right-demo
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    width: 50%;
+}
+.right-demo img
+{
+    max-width: 60%;
+}
+/*----------------------------------
+            CLEAN
+----------------------------------*/
+.clean
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+/*----------------------------------
+
+            
+----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------
 
             RESPONSIVE
 
 ----------------------------------*/
 /*----------------------------------
+
             TABLET
+
 ----------------------------------*/
+
 @media screen and (max-width: 992px) 
 {
+/*----------------------------------
+            GENERAL
+----------------------------------*/
     .main-container
     {
         width: 100%;
+    }
+/*----------------------------------
+            HEADER
+----------------------------------*/    
+    .header-section
+    {
+        padding: 15px 30px 10px 30px;
     }
     .link-button
     {
@@ -148,16 +328,65 @@ button a
     .hamburger
     {
         display: block;
+        font-size: 20px;
+    }
+/*----------------------------------
+            OPTIONS
+----------------------------------*/
+    .demo .blue-container
+    {
+        display: block;
+    }
+    .left-demo
+    {
+        padding-bottom: 0px;
+        width: 100%;
+    }
+    .right-demo
+    {
+        display: flex;
+        justify-content: left;
+        padding-top: 30px;
+        padding-left: 30px;
+        width: 70%;
+    }
+    .row
+    {
+        padding: 0 20px;
     }
 }
+
+
 /*----------------------------------
+
             MOBILE
+
 ----------------------------------*/
 @media screen and (max-width: 768px) 
 {
-    .main-container
+/*----------------------------------
+            OPTIONS
+----------------------------------*/
+    .col
     {
         width: 100%;
+        padding: 10px;
     }
-    
+    .upper-row
+    {
+        margin: 30px 20px 0 20px;
+    }
+    .lower-row
+    {
+        margin: 0 20px 0 20px;
+    }
+    .right-demo
+    {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-left: 0px;
+        width: 100%;
+    }
+
 }
