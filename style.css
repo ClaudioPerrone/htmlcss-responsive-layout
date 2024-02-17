@@ -80,6 +80,9 @@ img
 header
 {
     background-color: #0084fd;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 .header-section
 {
@@ -210,10 +213,6 @@ button a
     text-align: left;
 }
 /*----------------------------------
-            
-----------------------------------*/
-
-/*----------------------------------
 
             DEMO     
 ----------------------------------*/
@@ -278,10 +277,109 @@ button a
 }
 /*----------------------------------
 
-            
+            PLANNING
+
 ----------------------------------*/
+/*----------------------------------
 
-
+            GENERAL
+----------------------------------*/
+.middle-container
+{
+    max-width: 880px;
+    margin: 0 auto;
+}
+.planning
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #9792e4;
+    padding-bottom: 50px;
+}
+.box-planning
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+}
+.column
+{
+    width: 50%;
+    padding: 0 25px;
+}
+.left-col, .right-col
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*----------------------------------
+            LEFT-COL
+----------------------------------*/
+.left-col img
+{
+    padding: 100px 0;
+    width: 100%;
+}
+.text-left
+{
+    color: white;
+}
+.text-left h2
+{
+    padding: 40px 0;
+    font-size: 30px;
+}
+.text-left p
+{
+    line-height: 1.5;
+    font-size: 17px;
+}
+/*----------------------------------
+            RIGHT-COL
+----------------------------------*/
+.card-white
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+    background-color: white;
+    padding: 30px;
+}
+.card-white img
+{
+    padding: 0 45px;
+}
+.text-right
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-right h2
+{
+    padding: 25px 0;
+    font-size: 25px;
+}
+.text-right p
+{
+    line-height: 2;
+    font-size: 18px;
+    text-align: center;
+    font-style: oblique;
+}
+.app-btn
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 20px;
+    background-color: #9792e4;
+}
+.app-btn a
+{
+    font-size: 15px;
+}
 
 
 
@@ -315,6 +413,7 @@ button a
         width: 100%;
     }
 /*----------------------------------
+
             HEADER
 ----------------------------------*/    
     .header-section
@@ -344,7 +443,6 @@ button a
     }
     .right-demo
     {
-        display: flex;
         justify-content: left;
         padding-top: 30px;
         padding-left: 30px;
@@ -354,9 +452,39 @@ button a
     {
         padding: 0 20px;
     }
-}
+/*----------------------------------
+
+            PLANNING
+----------------------------------*/
+/*----------------------------------
+            GENERAL
+----------------------------------*/
+    .middle-container
+    {
+        width: 100%;
+    }
+    .column
+    {
+        width: 100%;
+        padding: 10px 25px;
+    }
+    .text-left h2
+    {
+        padding: 40px 0;
+        font-size: 80px;
+    }
+    .text-left p
+    {
+        line-height: 1.5;
+        font-size: 16px;
+    }
 
 
+
+
+
+
+}   
 /*----------------------------------
 
             MOBILE
@@ -386,6 +514,16 @@ button a
         justify-content: center;
         padding-top: 30px;
         padding-left: 0px;
+        width: 100%;
+    }
+    .text-left h2
+    {
+        padding-bottom: 40px;
+        font-size: 45px;
+    }
+    .left-col img
+    {
+        padding: 50px 0;
         width: 100%;
     }
 
