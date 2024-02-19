@@ -83,6 +83,7 @@ header
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 .header-section
 {
@@ -380,16 +381,300 @@ button a
 {
     font-size: 15px;
 }
+/*----------------------------------
 
+            PARTNERS
 
+----------------------------------*/
+/*----------------------------------
 
+            TEXT-PARTNERS
+----------------------------------*/
+.text-partners
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.text-partners h4
+{
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.text-partners h1
+{
+    font-size: 45px;
+    color: #9792e4;
+}
+.text-partners p
+{
+    padding: 40px 60px;
+    font-size: 18px;
+    text-align: center;
+}
+/*----------------------------------
 
+            COLUMN-PARTNERS
+----------------------------------*/
+.partners
+{
+    margin-bottom: 70px;
+}
+.column-partners
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.column-partners .card
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #9792e4;
+    border-radius: 50px;
+    padding: 30px;
+    margin: 15px;
+}
+.text-partners p
+{
+    text-align: left;
+    color: white;
+    line-height: 2;
+}
+.text-partners h4
+{
+    text-align: left;
+    color: white;
+    line-height: 2;
+    font-size: 16px;
+}
+/*----------------------------------
 
+            BENEFITS
 
+----------------------------------*/
+.benefits
+{
+    background-color: #9792e4;
+    padding-bottom: 40px;
+}
+.box-benefits > h1
+{
+    text-align: center;
+    padding: 40px;
+    font-size: 50px;
+    color: white;
+}
+.row-benefits
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.card-benefits
+{
+    width: calc(100% / 3);
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 10px;
+}
+.card-benefits h1, .card-benefits h3
+{
+    color: #9792e4;
+}
+.card-benefits h1
+{
+    font-size: 60px;
+    padding: 10px 0;
+}
+.card-benefits h3
+{
+    font-size: 25px;
+}
+.card-benefits p
+{
+    color: #5a6e7f;
+    padding: 20px 0;
+    line-height: 2;  
+}
+.card-benefits button
+{
+    padding: 10px 45px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: #9792e4;
+    color: white;
+}
+.card-benefits a
+{
+    color: white;
+}
+/*----------------------------------
 
+            BENEFITS
 
+----------------------------------*/
+/*----------------------------------
+            
+----------------------------------*/
+.box-about
+{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.text-about
+{
+    width: 70%;
+}
+.text-about h1
+{
+    font-size: 40px;
+    color: #9792e4;
+}
+.text-about p
+{
+    color: #5a6e7f;
+    padding: 30px 50px 0 0;
+    line-height: 2;
+}
+.photo-about
+{
+    width: 30%;
+    padding: 20px 22px;
+}
+.photo-about h2
+{
+    color: #9792e4;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 20px 0;
+}
+.photo-about button
+{
+    padding: 10px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: #9792e4;
+}
+.photo-about a
+{
+    color: white;
+    padding: 0 10px;
+    font-weight: 700;
+}
+.photo-about i
+{
+    color: white;
+    padding: 0 5px;
+}
+/*----------------------------------
 
+            STARTED
 
+----------------------------------*/
+/*----------------------------------
+            
+----------------------------------*/
+.small-container
+{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.started
+{
+    background-color: #9792e4;
+    padding-bottom: 40px;
+}
+.box-started
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.box-started h3
+{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 100;
+    margin-top: 60px;
+}
+.box-started h2
+{
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 30px 0;
+}
+.box-started h1
+{
+    color: #fdc15f;
+    font-size: 100px;
+    font-weight: 900;
+    margin: 10px 0;
+}
+.box-started p
+{
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    line-height: 2;
+    letter-spacing: 1.5px;
+}
+p a 
+{
+    color: white;
+    text-decoration: underline;
+}
+.box-started button
+{
+    padding: 30px 90px;
+    border-radius: 40px;
+    border-style: none;
+    background-color: white;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+button a
+{
+    color: #9792e4;
+    font-size: 20px;
+    font-weight: 600;
+}
+/*----------------------------------
+
+            FOOTER
+
+----------------------------------*/
+/*----------------------------------
+
+            FOOTER-SECTION
+----------------------------------*/
+footer
+{
+    background-color: #333333;
+}
+.text-footer
+{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 50px 0;
+}
+.top-footer
+{
+    padding-bottom: 60px;
+}
+.bottom-footer a
+{
+    color: #9792e4;
+
+}
 
 
 /*----------------------------------
@@ -478,9 +763,44 @@ button a
         line-height: 1.5;
         font-size: 16px;
     }
+/*----------------------------------
+
+            BENEFITS
+----------------------------------*/
+/*----------------------------------
+            GENERAL
+----------------------------------*/
+    .row-benefits
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
 
+/*----------------------------------
 
+            STARTED
+----------------------------------*/
+/*----------------------------------
+            STARTED-SECTION
+----------------------------------*/
+    .started
+    {
+        padding: 30px;
+    }
+
+
+/*----------------------------------
+
+            FOOTER
+----------------------------------*/
+/*----------------------------------
+            FOOTER-SECTION
+----------------------------------*/
+    .small-container
+    {
+        max-width: 100%;
+    }
 
 
 
@@ -525,6 +845,30 @@ button a
     {
         padding: 50px 0;
         width: 100%;
+    }
+/*----------------------------------
+            PARTNERS
+----------------------------------*/
+    .column-partners .card
+    {
+        flex-wrap: wrap;
+    }
+/*----------------------------------
+
+            BENEFITS
+
+----------------------------------*/
+/*----------------------------------
+            
+----------------------------------*/
+    .card-benefits
+    {
+        width: 100%;
+    }
+    .row-benefits
+    {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 }
